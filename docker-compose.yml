@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+    gub:
+        container_name: gub
+        build:
+            context: .
+            dockerfile: docker/gub.Dockerfile
+        volumes:
+            - ./gub:/gub
+        command: sh -c "sleep infinity"
